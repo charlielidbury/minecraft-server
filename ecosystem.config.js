@@ -14,7 +14,7 @@ module.exports = {
       watch: true,
       ignore_watch: ["world", "logs"],
       env_hook: {
-        command: "git pull && pm2 restart minecraft-server",
+        command: "git pull --depth 1 && pm2 restart minecraft-server",
         cwd: ".",
       },
     },
